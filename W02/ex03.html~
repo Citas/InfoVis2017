@@ -1,0 +1,10 @@
+<Html>
+      <head>
+             <title>W02: example 03</title>
+      </head>
+      <body>
+             <script>
+                   window.alert(‘hello world');
+             </script>
+      </body>
+</html>
