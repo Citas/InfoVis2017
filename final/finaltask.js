@@ -151,6 +151,8 @@ function main()
 	            shaderModel=2;
 	        else if(guiControls.shadingmodel=='original')
 	            shaderModel=3;
+		else if(guiControls.shadingmodel=='cooktorrance')
+		shaderModel=4;
 	        if(shaderModel==0)
             surfaces = Isosurfaces0( volume, isovalue );
 	        else if(shaderModel==1)
@@ -159,6 +161,8 @@ function main()
             surfaces = Isosurfaces2( volume, isovalue );
             else if(shaderModel==3)
             surfaces = Isosurfaces3( volume, isovalue );
+	else if(shaderModel==4)
+            surfaces = Isosurfaces4( volume, isovalue );
 			
 			/*var smin = 0;
             var smax = volume.resolution.z - 2;	
